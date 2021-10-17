@@ -131,7 +131,7 @@ function createhelp(teams,team_name,player_name,player_score){
     }
     let idx2=-1; 
     for(let i=0;i<teams[idx].players.length;i++){
-         if(teams[idx].players[i].PlayerName==player_name)
+         if(teams[idx].players[i].PlayerName.substring(0,10)==player_name.substring(0,10) )
             {
                idx2=i;
                break;
